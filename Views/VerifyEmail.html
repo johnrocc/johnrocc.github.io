@@ -3,7 +3,9 @@
 <body onload="verifyEmail()">
 <script>
     function verifyEmail() {
-        var email = GetURLParameter('email');
+        const queryString = window.location.search;
+        var url = new URL(queryString);
+        var email = url.searchParams.get("email");
         alert(email);
         /*
         $.ajax({
