@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body onload="verifyEmail()">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>
     function verifyEmail() {
-        const queryString = window.location.search;
-        var url = new URL(queryString);
+        const queryString = window.location.href;
+        var url = new URLSearchParams(queryString);
         var email = url.searchParams.get("email");
         alert(email);
         /*
