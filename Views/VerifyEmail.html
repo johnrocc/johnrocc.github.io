@@ -4,9 +4,9 @@
 <script>
     function verifyEmail() {
         const queryString = window.location.href;
-        var url = new URLSearchParams(queryString);
-        //var email = url.searchParams.get("email");
-        alert(url);
+        var url = new URL(queryString);
+        var email = new URLSearchParams(url.email);
+        alert(email);
         /*
         $.ajax({
             type: 'POST',
