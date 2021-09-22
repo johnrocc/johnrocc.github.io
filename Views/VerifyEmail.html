@@ -1,1 +1,40 @@
-Email Verify Page
+<!DOCTYPE html>
+<html>
+<body onload="verifyEmail()">
+<script>
+    function verifyEmail() {
+        var email = GetURLParameter('email');
+        alert(email);
+        /*
+        $.ajax({
+            type: 'POST',
+            url: '/users/login',
+            data: $('form').serialize(),
+            success: function () {
+                $.ajax({
+                    method: 'GET',
+                    url: '/recipes',
+                    headers: { 'Authorization': `Bearer ${document.cookie.match('(^|;)\\s*token\\s*=\\s*([^;]+)')?.pop() || ''}` },
+                    error: function(err) {
+                    switch (err.statusText) {
+                        case "Unauthorized":
+                            // unauthorized
+                            document.location.href="/"; 
+                            break;
+                        }
+                    },
+                })
+                .done(function(data) {
+                $('body').html(data);
+                })
+            }
+            });
+            */
+    }
+</script>
+<h1>Email Verify Page</h1>
+
+
+
+</body>
+</html>
