@@ -5,7 +5,7 @@
     function verifyEmail() {
         const queryString = window.location.href;
         var url = new URL(queryString);
-        var email = new URLSearchParams(url.email);
+        var email = url.searchParams.get("email");
         alert(email);
         /*
         $.ajax({
