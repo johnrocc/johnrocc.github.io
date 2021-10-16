@@ -728,6 +728,6 @@ input::-webkit-input-placeholder {
 	.construction .phone {
 		max-width: 70%;
 		height: auto;
-		margin-left: 130px;
+		margin-left: 25%;
 	}
 }
