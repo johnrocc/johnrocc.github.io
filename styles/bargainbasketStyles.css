@@ -426,7 +426,7 @@ input::-webkit-input-placeholder {
 }
 
 
-@media screen and (max-width: 800px) {
+@media (max-width:800px) and (min-width:600px) {
 	/* Styles for first page with logo and links */
 
 	h2 {
@@ -637,9 +637,7 @@ input::-webkit-input-placeholder {
 	}
 }
 
-
-
-@media screen and (max-height: 600px) and (min-width: 801px) {
+@media (max-width: 600px) {
 	.home {
 		background-color: #ffd231;
 		padding: 20px 50px 20px 50px;
@@ -730,6 +728,6 @@ input::-webkit-input-placeholder {
 	.construction .phone {
 		max-width: 70%;
 		height: auto;
-		margin-left: 60px;
+		margin-left: 130px;
 	}
 }
