@@ -408,6 +408,12 @@ input::-webkit-input-placeholder {
 		margin-left: 175px;
 	}
 
+	.construction .sectionParagraphText {
+		width: 100%;
+		font-size: 1em;
+		padding-bottom: 40px;
+	}
+
 	fieldset {
 		flex-direction: column;
 		text-align: left;
@@ -635,6 +641,12 @@ input::-webkit-input-placeholder {
 		height: auto;
 		margin-left: 175px;
 	}
+
+	.construction .sectionParagraphText {
+		width: 100%;
+		font-size: 1em;
+		padding-bottom: 40px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -729,5 +741,11 @@ input::-webkit-input-placeholder {
 		max-width: 70%;
 		height: auto;
 		margin-left: 25%;
+	}
+
+	.construction .sectionParagraphText {
+		width: 100%;
+		font-size: 1em;
+		padding-bottom: 40px;
 	}
 }
