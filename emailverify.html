@@ -22,9 +22,16 @@
 		<link rel="stylesheet" href="styles/bargainbasketStyles.css">
 	</head>
 
-	<body>
-		<div class="home">
+	<script>
+		function verifyEmail() {
+		  document.getElementById("demo").innerHTML = "demo is loaded.";
+		}
+	</script>
+
+	<body onload="verifyEmail()">
+		<div class="home" id="div">
 			Email Verified
 		</div>
+		<p id="demo"></p>
 	</body>
 </html>
