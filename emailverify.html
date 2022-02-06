@@ -31,19 +31,18 @@
 			fetch("https://bargain-basket.herokuapp.com/users/verifyUserEmail", {
               method: "POST",
               headers: {
-                  'Accept': 'application/json',
-                  'Content-Type': 'application/json'
+                  'Accept': 'application/json'
               },
               body: JSON.stringify({email: email})
               })
               .then(response => response.json())
               .then(response => {
-                  if(response == 'Email Verfied'){
-					console.log('Emailed Verfied')
-                    resolve(true)
+                  if(response == 'Email Verified'){
+					console.log('Emailed Verified')
+                    //resolve(true)
                   }else{
-					console.log('Emailed Not Verfied')
-                    resolve(false)
+					console.log('Emailed Not Verified')
+                    //resolve(false)
                   }
                   
               
