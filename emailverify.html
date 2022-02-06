@@ -24,9 +24,10 @@
 
 	<script>
 		function verifyEmail() {
-			var url = new URL(url_string);
-			var c = url.searchParams.get("c");
-			console.log(c);
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const email = urlParams.get('email')
+			console.log(email);
 		}
 	</script>
 
