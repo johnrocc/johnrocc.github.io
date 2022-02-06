@@ -28,6 +28,30 @@
 			const urlParams = new URLSearchParams(queryString);
 			const email = urlParams.get('email')
 			console.log(email);
+			fetch("https://bargain-basket.herokuapp.com/users/verifyUserEmail", {
+              method: "POST",
+              headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json',
+                  'Authorization': "Bearer " + token
+              },
+              body: JSON.stringify({email: email})
+              })
+              .then(response => response.json())
+              .then(response => {
+                  if(response == 'Email Verfied'){
+					console.log('Emailed Verfied')
+                    resolve(true)
+                  }else{
+					console.log('Emailed Not Verfied')
+                    resolve(false)
+                  }
+                  
+              
+              })
+              .catch(err => {
+                  resolve("error")
+          });
 		}
 	</script>
 
