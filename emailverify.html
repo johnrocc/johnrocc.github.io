@@ -38,12 +38,9 @@
               .then(response => {
                   if(response == 'Email Verified'){
 					console.log('Emailed Verified')
-                    //resolve(true)
                   }else{
-					console.log(response)
-                  }
-                  
-              
+					console.log('Emailed Not Verified')
+                  }  
               })
               .catch(err => {
 				  console.log(err)
