@@ -24,6 +24,9 @@ h2 {
 	min-height: 100%; 
 }
 
+.imageEmailVerifiedDiv {
+	background-color: #ffd231;
+}
 
 /* Styles for first page with logo and links */
 .home {
@@ -454,7 +457,7 @@ input::-webkit-input-placeholder {
 
 	.emailVerifiedPic {
 		margin-top: 100px;
-		width: 100%;
+		width: 50%;
 	}
 
 	.home {
@@ -667,9 +670,9 @@ input::-webkit-input-placeholder {
 @media (max-width: 600px) {
 	.emailVerifiedPic {
 		margin-top: 100px;
-		width: 100%;
+		width: 50%;
 	}
-	
+
 	.home {
 		background-color: #ffd231;
 		padding: 20px 50px 20px 50px;
