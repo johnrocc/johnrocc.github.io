@@ -9,14 +9,19 @@
 
 
 
-body {
+html, body {
 	margin: 0;
+	height: 100%;
 	width: 100%;
 	font-family: 'Libre Franklin', sans-serif;
 }
 
 h2 {
 	font-weight: 900;
+}
+
+#wrapper {
+	min-height: 100%; 
 }
 
 
