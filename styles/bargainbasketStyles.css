@@ -361,6 +361,10 @@ input::-webkit-input-placeholder {
     font-weight: bold;
 }
 
+.emailVerifiedPic {
+	margin-top: 100px;
+}
+
 
 @media screen and (max-width: 1200px) {
 	
@@ -442,10 +446,16 @@ input::-webkit-input-placeholder {
 
 	h2 {
 		text-align: center;
-	  }
-	  p {
-		  text-align: center;
-	  }
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.emailVerifiedPic {
+		margin-top: 100px;
+		width: 100%;
+	}
 
 	.home {
 		background-color: #ffd231;
@@ -655,6 +665,11 @@ input::-webkit-input-placeholder {
 }
 
 @media (max-width: 600px) {
+	.emailVerifiedPic {
+		margin-top: 100px;
+		width: 100%;
+	}
+	
 	.home {
 		background-color: #ffd231;
 		padding: 20px 50px 20px 50px;
